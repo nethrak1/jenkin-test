@@ -5,15 +5,15 @@ pipeline {
       steps {
         parallel(
           "Backend": {
-            echo 'backend message '
+            echo 'backend dev message '
             
           },
           "Backend2": {
-            echo 'backend2'
+            echo 'backend2 dev'
             
           },
           "Backeend": {
-            echo 'backend3'
+            echo 'backend3 dev'
             
           }
         )
@@ -21,12 +21,12 @@ pipeline {
     }
     stage('Frontend') {
       steps {
-        echo 'Frontend massage'
+        echo 'Frontend dev massage'
       }
     }
     stage('Final') {
       steps {
-        echo 'Final'
+        echo 'Final dev'
       }
     }
   }
